@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Operation</title>
+<link rel="stylesheet" href="operation.css">
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>  
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="operation1.js"></script>
+</head>
+
+<body>
+<div>
+	<table border="1px solid black" align="center" style="margin-top:150px;">
+	
+		<form method="post">
+		
+		<tr>
+			<td>Number One</td>
+			<td><input type="number" name="num1" id="num1"></td>
+		</tr>
+		
+		<tr>
+			<td>Number Two</td>
+			<td><input type="number" name="num2" id="num2"></td>
+		</tr>
+		
+		<tr>
+			<td>Operation</td>
+			<td>
+			<select name="operation" id="operation">
+				<option value="">Select Operation</option>
+				<option value="addition">Addition</option>
+				<option value="substraction">Substraction</option>
+				<option value="multiplication">Multiplication</option>
+				<option value="division">Division</option>
+				<option value="modulus">Modulus</option>
+			</select>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Submit</td>
+			<td align="center"><input type="submit" name="save" id="save" value="Submit"></td>
+		</tr>
+			
+		<tr>
+			<td>Result</td>
+			<td><input type="text" name="result" id="result"></td>
+		</tr>	
+		</form>
+	
+	</table>
+</div>
+</body>
+
+</html>
