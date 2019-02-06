@@ -1,0 +1,38 @@
+[
+	{
+		"id":"1",
+		"name":"Kareena",
+		"address":"Mumbai",
+		"gender":"Female",
+		"designation":"Actress",
+		"age":"36"
+	},
+	
+	{
+		"id":"2",
+		"name":"Dipika",
+		"address":"Mumbai",
+		"gender":"Female",
+		"designation":"Actress",
+		"age":"33"
+	},
+	
+	{
+		"id":"3",
+		"name":"Pritey",
+		"address":"Mumbai",
+		"gender":"Female",
+		"designation":"Actress",
+		"age":"42"
+	},
+	
+	{
+		"id":"4",
+		"name":"Kajol",
+		"address":"Mumbai",
+		"gender":"Female",
+		"designation":"Actress",
+		"age":"43"
+	}
+	
+]

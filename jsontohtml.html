@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert JSON Data into HTML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   	<link rel="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+   	<script scr="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ </head> 
+ 
+ <body>
+ 	<div class="container">
+ 		<div class="tabl-responsive">
+ 			<h4 align="center">Converting JSON into HTML</h4>
+ 			
+ 			<table border="2px solid black" align="center" id="employee-table">
+ 			<tr>
+ 				<th>Id</th>
+ 				<th>Name</th>
+ 				<th>Address</th>
+ 				<th>Gender</th>
+ 				<th>Designation</th>
+ 				<th>Age</th>
+ 			</tr>
+ 		</div>
+   </div>
+</body>
+</html>
+
+
+
+<script>
+$(document).ready(function(){
+	$.getJSON("employee.json", function(data){
+		var employee_data='';
+		$.each(data, function(key, value){
+			employee_data+='<tr>';
+			employee_data+='<td>'+value.id+'</td>';
+			employee_data+='<td>'+value.name+'</td>';
+			employee_data+='<td>'+value.address+'</td>';
+			employee_data+='<td>'+value.gender+'</td>';
+			employee_data+='<td>'+value.designation+'</td>';
+			employee_data+='<td>'+value.age+'</td>';
+			employee_data+='</tr>';
+		});
+		$('#employee-table').append(employee_data);
+	});
+});
+</script>
